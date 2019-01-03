@@ -49,10 +49,13 @@ $result1 = array_combine($even, $odd);
 
 
 foreach ($result1 as $key => $value) {
-  $result2 =  $key  . ' ' .  $value .'<br>';
+  $result2 =  $key  . ' ' .  $value;
+
  $fant[] = $result2;
  }
-
+for ($i = 0 ; $i < count($fant); $i++) { 
+ }
+$s = implode(', <br> ', $fant);
 
 ?>
 
@@ -68,19 +71,8 @@ foreach ($result1 as $key => $value) {
     <body>
       <h1>Животные</h1>
 
-      <p><?=  $fant[0]; ?></p>
-      <p><?=  $fant[1]; ?></p> 
-      <p><?=  $fant[2]; ?></p>
-      <p><?=  $fant[3]; ?></p>
-      <p><?=  $fant[4]; ?></p>
-      <p><?=  $fant[5]; ?></p>
-      <p><?=  $fant[6]; ?></p>
-      <p><?=  $fant[7]; ?></p>
-      <p><?=  $fant[8]; ?></p>
-      <p><?=  $fant[9]; ?></p>
-      <p><?=  $fant[10]; ?></p>
-      <p><?=  $fant[11]; ?></p>
-      
+
+      <p> <?= $s;  ?></p>
 
       
       
